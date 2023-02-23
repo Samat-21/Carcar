@@ -1,0 +1,60 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+    <title>{{ title }}</title>
+    <div><h1>Пользователь № {{ profile.user.pk }}</h1></div>
+    <div class="profile-photo">
+        {% if profile.photo %}
+            <img src="{{ profile.photo.url}}" height="300px" width="300px">
+        {% else %}
+            <img src="{% static 'main/images/nophoto.svg' %}" height="300px" width="250px">
+        {% endif %}
+    </div>
+    <div class="profile-info">
+        <h2>Имя и фамилия: </h2>
+        <p>{{ profile.user.first_name }} {{ profile.user.last_name }}</p>
+    </div>
+    <div class="profile-info">
+        <h2>Информация о пользователе: </h2>
+        {% if profile.info %}
+            <p>{{ profile.info }}</p>
+        {% else %}
+            <p>Пользователь еще не добавил информацию о себе</p>
+        {% endif %}
+    </div>
+    <div class="profile-trips">
+        <h2>Поездки в роли водителя: </h2>
+        {% if profile.user.dtrip.all %}
+            {% for t in profile.user.dtrip.all %}
+                <ul class="trip">
+                    <li><a href="{{ t.get_absolute_url }}">Поездка № {{ t.pk }}</a></li>
+                    <li><p>Откуда: {{ t.from_city }}</p></li>
+                    <li><p>Куда: {{ t.to_city }}</p></li>
+                    <li><p>Информация о поездке: {{ t.info }}</p></li>
+                    <li><p>Цена: {{ t.price }}руб</p></li>
+                    <li><p>Дата: {{ t.date }}</p></li>
+                </ul>
+            {% endfor %}
+        {% else %}
+            <h3>Поездок нет</h3>
+        {% endif %}
+    </div>
+    <div class="profile-trips g">
+        <h2>Поездки в роли пассажира:</h2>
+        {% if profile.user.trip_set.all %}
+            {% for t in profile.user.trip_set.all %}
+                <ul class="trip">
+                    <li><a href="{{ t.get_absolute_url }}">Поездка № {{ t.pk }}</a></li>
+                    <li><p>Откуда: {{ t.from_city }}</p></li>
+                    <li><p>Куда: {{ t.to_city }}</p></li>
+                    <li><p>Информация о поездке: {{ t.info }}</p></li>
+                    <li><p>Цена: {{ t.price }}руб</p></li>
+                    <li><p>Дата: {{ t.date }}</p></li>
+                </ul>
+            {% endfor %}
+        {% else %}
+            <h3>Поездок нет</h3>
+        {% endif %}
+    </div>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% load static %}
+{% load main_tags %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" href="{% static 'main/css/style.css' %}" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{% static 'main/images/logo.svg' %}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body >
+    {% block mainmenu %}
+        <div class="header">
+            <ul class="hr">
+                <li><a class="logo" href="{% url 'home' %}"><img src="{% static 'main/images/logo.svg' %}"  height="25" /></a></li>
+                <li><a href="{{ request.user.userinfo.get_absolute_url }}">Мой профиль</a></li>
+                <li><a href="{% url 'trips' %}">Поездки</a></li>
+                <li><a href="{% url 'add_trip' %}">Создать поездку</a></li>
+                <li>
+                    {% if request.user.is_authenticated %}
+                    <ul class="reg-l">
+                        <li><a href="{% url 'red_info' %}">Редактировать профиль</a></li>
+                        <li><a href="{% url 'logout' %}">Выйти</a></li>
+                    </ul>
+                    {% else %}
+                    <ul class="reg">
+                        <li><a href="{% url 'login' %}">Вход</a></li>
+                        <li><a href="{% url 'register' %}">Регистрация</a></li>
+                    </ul>
+                    {% endif %}
+                </li>
+            </ul>
+
+        </div>
+
+    {% endblock mainmenu %}
+
+{% block content %}
+{% endblock content %}
+
+</body>
+</html>

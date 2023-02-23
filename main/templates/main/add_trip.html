@@ -1,0 +1,13 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+    <title>{{ title }}</title>
+    <div class="add-trip">
+    <form action="{% url 'add_trip' %}" method="post">
+        {% csrf_token %}
+        <div>{{ form.non_field_errors }}</div>
+        {{ form.as_p }}
+        <button type="submit">Добавить</button>
+    </form>
+    </div>
+{% endblock %}

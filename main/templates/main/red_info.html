@@ -1,0 +1,26 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+<h1>Редактируйте свой профиль</h1>
+<div class="profile-photo">
+    {% if request.user.userinfo.photo %}
+        <img src="{{ request.user.userinfo.photo.url}}" height="300px" width="300px">
+    {% else %}
+        <img src="{% static 'main/images/nophoto.svg' %}" height="300px" width="250px">
+    {% endif %}
+</div>
+<div class="profile-info">
+    <h2>Информация обо мне: </h2>
+    {% if request.user.userinfo.info %}
+        <p>{{ request.user.userinfo.info }}</p>
+    {% else %}
+        <p>Пользователь еще не добавил информацию о себе</p>
+    {% endif %}
+</div>
+<h2>Добавьте фото и информацию о себе</h2>
+<div class="choice-trip"><form action="{% url 'red_info' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_div }}
+        <button type="submit">Сохранить</button>
+    </form></div>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+    <title>{{ title }}</title>
+    <div><h1>Поездки</h1></div>
+    <!--<div class="choice-trip"><form action="{% url 'trips' %}" method="get">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Найти</button>
+    </form></div>
+    <ul>-->
+    {% for t in trips %}
+        <div class="trip">
+            <ul>
+                {% if t.driver.userinfo.photo %}
+                    <li><a class="cirph" href="{{ t.driver.userinfo.get_absolute_url }}"><img src="{{ t.driver.userinfo.photo.url}}" height="100px" width="100px">{{ t.driver.first_name }}</a></li>
+                {% else %}
+                    <li><a class="cirph" href="{{ t.driver.userinfo.get_absolute_url }}"><img src="{% static 'main/images/nophoto.svg' %}" height="100px" width="100px">{{ t.driver.first_name }}</a></li>
+                {% endif %}
+                <li><a href="{{ t.get_absolute_url }}">Поездка № {{ t.pk }}</a></li>
+                <li><p>Откуда: {{ t.from_city }}</p></li>
+                <li><p>Куда: {{ t.to_city }}</p></li>
+                <li><p>Информация о поездке: {{ t.info }}</p></li>
+                <li><p>Цена: {{ t.price }}руб</p></li>
+                <li><p>Дата: {{ t.date }}</p></li>
+            </ul>
+        </div>
+    {% endfor %}
+    </ul>
+    <!--<nav class="list-pages">
+        <ul class="pages">
+            {% if page_obj.has_previous%}
+                <li><a href="?page={{ page_obj.previous_page_number }}">&lt;</a></li>
+            {% endif %}
+
+            {% for p in paginator.page_range %}
+                {% if page_obj.number == p %}
+                    <li>{{ p }}</li>
+                {% elif p >= page_obj.number|add:-1 and p <= page_obj.number|add:1 %}
+                    <li><a href="?page={{ p }}">{{ p }}</a></li>
+                {% endif %}
+            {% endfor %}
+
+            {% if page_obj.has_next%}
+                <li><a href="?page={{ page_obj.next_page_number }}">&gt;</a></li>
+            {% endif %}
+        </ul>
+    </nav>-->
+{% endblock %}

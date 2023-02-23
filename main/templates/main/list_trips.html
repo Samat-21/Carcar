@@ -1,0 +1,16 @@
+<ul>
+    {% for t in trips %}
+        <li>
+            <div class="trip">
+                <ul>
+                    <li><a href="{{ t.get_absolute_url }}">Поездка № {{ t.pk }}</a></li>
+                    <li><p>Откуда: {{ t.from_city }}</p></li>
+                    <li><p>Куда: {{ t.to_city }}</p></li>
+                    <li><p>Информация о поездке: {{ t.info }}</p></li>
+                    <li><p>Цена: {{ t.price }}руб</p></li>
+                </ul>
+            </div>
+        </li>
+    {% endfor %}
+</ul>
+

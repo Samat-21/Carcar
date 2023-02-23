@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    id="svg3045"
+    sodipodi:docname="New document 2"
+    viewBox="0 0 404.37 362.86"
+    version="1.1"
+    inkscape:version="0.47 r22583"
+  >
+  <sodipodi:namedview
+      id="base"
+      bordercolor="#666666"
+      inkscape:pageshadow="2"
+      inkscape:window-y="-8"
+      pagecolor="#ffffff"
+      inkscape:window-height="706"
+      inkscape:window-maximized="1"
+      inkscape:zoom="0.34794922"
+      inkscape:window-x="-8"
+      showgrid="false"
+      borderopacity="1.0"
+      inkscape:current-layer="layer1"
+      inkscape:cx="228.33442"
+      inkscape:cy="311.61549"
+      inkscape:window-width="1280"
+      inkscape:pageopacity="0.0"
+      inkscape:document-units="px"
+  />
+  <g
+      id="layer1"
+      inkscape:label="Layer 1"
+      inkscape:groupmode="layer"
+      transform="translate(-259.03 -428.3)"
+    >
+    <g
+        id="g3045"
+        transform="matrix(1.223 0 0 1.223 -208.47 -415.14)"
+      >
+      <path
+          id="path2983"
+          style="fill:#3771c8"
+          d="m547.55 872.24c-88.768 0-161.25 50.61-165.31 114.08h330.63c-4.04-63.47-76.55-114.08-165.32-114.08z"
+      />
+      <path
+          id="path3020"
+          style="fill-opacity:.99608;fill:#c87137"
+          sodipodi:type="star"
+          d="m-57.918 795.74-24.394-42.252-24.394-42.252h48.789 48.789l-24.394 42.252-24.394 42.252z"
+          sodipodi:r1="56.336658"
+          inkscape:flatsided="false"
+          transform="translate(605.48 134.13)"
+          sodipodi:arg2="2.6179939"
+          sodipodi:arg1="1.5707963"
+          inkscape:randomized="0"
+          sodipodi:cy="739.40143"
+          sodipodi:cx="-57.91806"
+          inkscape:rounded="0"
+          sodipodi:r2="28.168333"
+          sodipodi:sides="3"
+      />
+      <path
+          id="path3043"
+          style="opacity:0.99;fill-opacity:.99608;fill:#ffffff"
+          d="m594.08 838.16c6.2151 12.322 9.1482 29.377 7.25 47.781-1.7436 16.906-7.2374 31.84-14.781 42.531l-28.531-16.5 36.062-73.812z"
+      />
+      <path
+          id="path3029"
+          style="opacity:0.99;fill-opacity:.99608;fill:#ffffff"
+          d="m501.06 838.16c-6.2151 12.322-9.1482 29.377-7.25 47.781 1.7436 16.906 7.2374 31.84 14.781 42.531l28.531-16.5-36.062-73.812z"
+      />
+      <path
+          id="path2987"
+          sodipodi:rx="144.28572"
+          sodipodi:ry="145.71428"
+          style="fill:#000000"
+          sodipodi:type="arc"
+          d="m465.71 183.79c0 80.476-64.599 145.71-144.29 145.71-79.687 0-144.29-65.239-144.29-145.71 0-80.476 64.599-145.71 144.29-145.71 79.687 0 144.29 65.239 144.29 145.71z"
+          transform="matrix(.57079 0 0 .61011 368.77 666.4)"
+          sodipodi:cy="183.79076"
+          sodipodi:cx="321.42856"
+      />
+      <path
+          id="path2989"
+          sodipodi:rx="124.28571"
+          sodipodi:ry="124.28571"
+          style="stroke:#deaa87;stroke-width:2;fill:#c87137"
+          sodipodi:type="arc"
+          d="m485.71 325.22c0 68.641-55.645 124.29-124.29 124.29-68.641 0-124.29-55.645-124.29-124.29 0-68.641 55.645-124.29 124.29-124.29 68.641 0 124.29 55.645 124.29 124.29z"
+          transform="matrix(.59440 0 0 .70726 332.73 569.65)"
+          sodipodi:cy="325.21933"
+          sodipodi:cx="361.42856"
+      />
+      <path
+          id="path2991"
+          sodipodi:rx="180"
+          sodipodi:ry="135.71428"
+          style="fill:#000000"
+          sodipodi:type="arc"
+          d="m554.29 199.51c0 74.953-80.589 135.71-180 135.71s-180-60.761-180-135.71c0-74.953 80.589-135.71 180-135.71s180 60.761 180 135.71z"
+          transform="matrix(.31983 .10834 -.072088 .21280 460 643.72)"
+          sodipodi:cy="199.50504"
+          sodipodi:cx="374.28571"
+      />
+      <path
+          id="path3014"
+          sodipodi:rx="8.6369038"
+          sodipodi:ry="8.6369038"
+          style="fill-opacity:.99608;fill:#ffffff"
+          sodipodi:type="arc"
+          d="m-277.4 737.88c0 4.77-3.8669 8.6369-8.6369 8.6369s-8.6369-3.8669-8.6369-8.6369 3.8669-8.6369 8.6369-8.6369 8.6369 3.8669 8.6369 8.6369z"
+          transform="translate(833.6 236.82)"
+          sodipodi:cy="737.87726"
+          sodipodi:cx="-286.03394"
+      />
+      <path
+          id="path3016"
+          sodipodi:rx="8.6369038"
+          sodipodi:ry="8.6369038"
+          style="fill-opacity:.99608;fill:#ffffff"
+          sodipodi:type="arc"
+          d="m-277.4 737.88c0 4.77-3.8669 8.6369-8.6369 8.6369s-8.6369-3.8669-8.6369-8.6369 3.8669-8.6369 8.6369-8.6369 8.6369 3.8669 8.6369 8.6369z"
+          transform="translate(833.6 208.82)"
+          sodipodi:cy="737.87726"
+          sodipodi:cx="-286.03394"
+      />
+    </g
+    >
+  </g
+  >
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >Man in Blue Shirt</dc:title
+        >
+        <dc:date
+          >2010-04-20T22:29:45</dc:date
+        >
+        <dc:description
+        />
+        <dc:source
+          >https://openclipart.org/detail/49327/man-in-blue-shirt-by-sheikh_tuhin</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >sheikh_tuhin</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >blue</rdf:li
+            >
+            <rdf:li
+              >man</rdf:li
+            >
+            <rdf:li
+              >shirt</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>

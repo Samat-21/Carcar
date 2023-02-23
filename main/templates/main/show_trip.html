@@ -1,0 +1,53 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+    <title>{{ title }}</title>
+    <div><h1>Поездка № {{ trip.pk }}</h1></div>
+    <div class="driver">
+        <h2>Водитель: </h2>
+        <p><a href="{{ trip.driver.userinfo.get_absolute_url }}" class="driver-profile">{{ trip.driver.first_name }} {{ trip.driver.last_name }}</a></p>
+        {% if trip.driver.userinfo.photo %}
+            <img src="{{ trip.driver.userinfo.photo.url}}" height="70%" width="98%">
+        {% else %}
+            <img src="{% static 'main/images/nophoto.svg' %}" height="300px" width="250px">
+        {% endif %}
+    </div>
+    <div class="trip-info">
+        <ul>
+            <li>Откуда: {{ trip.from_city }}</li>
+            <li>Куда: {{ trip.to_city }}</li>
+            <li>Дата: {{ trip.date }}</li>
+            <li>Время: {{ trip.time }}</li>
+            <li>Информация о поездке: {{ trip.info }}</li>
+            <li>Свободных мест: {{ trip.capacity }}</li>
+            <li>Цена: {{ trip.price }} рублей</li>
+        </ul>
+    </div>
+    <div class="trip-buttons">
+        <form method="post">
+        {% csrf_token %}
+            {% if trip.driver == request.user %}
+                <h1>Вы являетесь водителем этой поездки</h1>
+            {% elif request.user in trip.passangers.all%}
+                <button class="b-den" name="book" value="unbook">Отменить бронь</button>
+            {% elif trip.capacity == 0 %}
+                <h1>Все места забронированы</h1>
+            {% else %}
+                <button class="b-suc" name="book" value="book">Забронировать</button>
+            {% endif %}
+        </form>
+    </div>
+    <div class = passangers>
+        <h2>Пассажиры</h2>
+        {% if trip.passangers.all %}
+            {% for p in trip.passangers.all%}
+                <div class="pas">
+                    <a href="{{ p.userinfo.get_absolute_url }}"><img src="{{ p.userinfo.photo.url }}">{{ p.last_name }} {{ p.first_name }}</a>
+                </div>
+            {% endfor %}
+        {% else %}
+            <h3>Пассажиров пока нет</h3>
+        {% endif %}
+    </div>
+{% endblock %}
